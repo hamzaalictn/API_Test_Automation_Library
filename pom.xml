@@ -92,6 +92,7 @@
                                 <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>
                             </jsonFiles>
+                            <!-- optional, defaults to outputDirectory if not specified -->
 
                             <!-- optional, set true to group features by its Ids -->
                             <mergeFeaturesById>false</mergeFeaturesById>
@@ -105,5 +106,6 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
 

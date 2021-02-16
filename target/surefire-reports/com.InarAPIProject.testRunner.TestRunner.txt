@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.InarAPIProject.testRunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.275 s - in com.InarAPIProject.testRunner.TestRunner
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.186 sec

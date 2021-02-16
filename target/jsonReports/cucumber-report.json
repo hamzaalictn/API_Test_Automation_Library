@@ -3,313 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-14T12:33:49.980Z",
-        "line": 13,
-        "name": "Verify if Place is being Succesfully added using AddPlaceAPI",
-        "description": "",
-        "id": "validating-place-api-s;verify-if-place-is-being-succesfully-added-using-addplaceapi;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1187303000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Add Place Payload with \"AAhouse\" \"English\" \"World cross center\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"AAhouse\"",
-                  "offset": 23
-                },
-                {
-                  "val": "\"English\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"World cross center\"",
-                  "offset": 43
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.add_Place_Payload(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1642041000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user calls \"AddPlaceAPI\" with \"POST\" http request",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"AddPlaceAPI\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"POST\"",
-                  "offset": 30
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1630000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the API call got success with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 42
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.the_API_call_got_succes_with_status_code(java.lang.Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 376611000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "\"status\" in response body is \"OK\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"status\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"OK\"",
-                  "offset": 29
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9632000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "\"scope\" in response body is \"APP\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"scope\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"APP\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2285507000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify place_Id created maps to \"AAhouse\" using \"getPlaceAPI\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"AAhouse\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"getPlaceAPI\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.verify_place_Id_created_maps_to_using(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@AddPlace"
-          },
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T12:33:55.522Z",
-        "line": 14,
-        "name": "Verify if Place is being Succesfully added using AddPlaceAPI",
-        "description": "",
-        "id": "validating-place-api-s;verify-if-place-is-being-succesfully-added-using-addplaceapi;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3280000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Add Place Payload with \"BBhouse\" \"Spanish\" \"Sea cross center\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"BBhouse\"",
-                  "offset": 23
-                },
-                {
-                  "val": "\"Spanish\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"Sea cross center\"",
-                  "offset": 43
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.add_Place_Payload(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 783712000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user calls \"AddPlaceAPI\" with \"POST\" http request",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"AddPlaceAPI\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"POST\"",
-                  "offset": 30
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 63000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the API call got success with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 42
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.the_API_call_got_succes_with_status_code(java.lang.Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10531000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "\"status\" in response body is \"OK\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"status\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"OK\"",
-                  "offset": 29
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 28841000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "\"scope\" in response body is \"APP\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"scope\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"APP\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2283713000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify place_Id created maps to \"BBhouse\" using \"getPlaceAPI\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"BBhouse\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"getPlaceAPI\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.verify_place_Id_created_maps_to_using(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@AddPlace"
-          },
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T12:33:58.638Z",
+        "start_timestamp": "2021-02-15T11:04:43.681Z",
         "before": [
           {
             "result": {
-              "duration": 650000,
+              "duration": 5055465000,
               "status": "passed"
             },
             "match": {
@@ -317,7 +15,7 @@
             }
           }
         ],
-        "line": 17,
+        "line": 16,
         "name": "Verify if Delete Place functionality is working",
         "description": "",
         "id": "validating-place-api-s;verify-if-delete-place-functionality-is-working",
@@ -326,10 +24,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1437000,
+              "duration": 1794000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 17,
             "name": "DeletePlace Payload",
             "match": {
               "location": "com.InarAPIProject.stepDefinitions.StepDefinitions.deleteplace_Payload()"
@@ -338,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 2468772000,
+              "duration": 2671998000,
               "status": "passed"
             },
-            "line": 19,
+            "line": 18,
             "name": "user calls \"deletePlaceAPI\" with \"POST\" http request",
             "match": {
               "arguments": [
@@ -363,7 +61,7 @@
               "duration": 173000,
               "status": "passed"
             },
-            "line": 20,
+            "line": 19,
             "name": "the API call got success with status code 200",
             "match": {
               "arguments": [
@@ -378,10 +76,10 @@
           },
           {
             "result": {
-              "duration": 13722000,
+              "duration": 11074000,
               "status": "passed"
             },
-            "line": 21,
+            "line": 20,
             "name": "\"status\" in response body is \"OK\"",
             "match": {
               "arguments": [

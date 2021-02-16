@@ -18,7 +18,6 @@ public class AddPlace {
     }
 
     public void setAccuracy(int accuracy) {
-
         this.accuracy = accuracy;
     }
 

@@ -8,9 +8,8 @@ Feature: Validating Place API's
     And "scope" in response body is "APP"
     And verify place_Id created maps to "<name>" using "getPlaceAPI"
 
-    Examples:
-      |name 	 | language |address		 |
-      |AAhouse |  English |World cross center|
+
+
       |BBhouse | Spanish  |Sea cross center  |
 
 @DeletePlace @Regression
@@ -20,3 +19,10 @@ Feature: Validating Place API's
     Then the API call got success with status code 200
     And "status" in response body is "OK"
 
+  @AddPlace @Regression
+  Scenario Outline:
+    Given
+    When
+    Then
+    Examples:
+      |name 	 | language |address		 |

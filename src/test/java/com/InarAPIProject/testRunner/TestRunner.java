@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         glue = "com/InarAPIProject/stepDefinitions",
         tags = "@Regression",
         plugin ="json:target/jsonReports/cucumber-report.json"
+
 )
 public class TestRunner {
 }
